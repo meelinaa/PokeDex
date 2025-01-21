@@ -1,18 +1,16 @@
-# Pokédex: Interaktive Pokémon-Datenbank 🕹️
+# Pokédex: Interaktive Pokémon-Datenbank 🎮
+
+<img src="/README-Images/banner.png" alt="Beschreibung" style="width: 100%; display: block;">
+
 
 Pokédex ist eine einfache, aber leistungsstarke Webanwendung, mit der Benutzer Pokémon suchen und wichtige Informationen zu jedem Pokémon erhalten können. Die Anwendung nutzt die PokéAPI, um Echtzeitdaten abzurufen und sie in einer benutzerfreundlichen Oberfläche anzuzeigen.
 
-<video width="600" controls>
-     <source src="./README-Images/PokeDexVid.png" type="video/mp4">
-     Your browser does not support the video tag.
-   </video>
-
 ## Features
 
-- **Pokémon-Suche:** Geben Sie den Namen eines Pokémon ein, um Daten wie Typ, Gewicht, Größe und Index anzuzeigen.
-- **Dynamische Anzeige:** Daten werden mithilfe der PokéAPI in Echtzeit abgerufen und visuell dargestellt.
-- **Farbliche Typ-Kennzeichnung:** Die Typen der Pokémon werden visuell hervorgehoben, um die Benutzererfahrung zu verbessern.
-- **Saubere Logik:** Gut strukturierter Code, der die Daten effizient verarbeitet und darstellt.
+- **Pokémon-Suche:** Benutzer können Pokémon anhand ihres Namens suchen.
+- **Echtzeit-Daten:** Die App lädt Typ, Gewicht, Größe und Index aus der PokéAPI.
+- **Farbliche Typ-Kennzeichnung:** Typen werden optisch hervorgehoben.
+- **Benutzerfreundlich:** Intuitive Bedienung und modernes Design.
 
 ---
 
@@ -35,19 +33,20 @@ Pokédex ist eine einfache, aber leistungsstarke Webanwendung, mit der Benutzer 
 
 ## Software-Entwicklung und Planung
 
-Dieses Projekt wurde vollständig eigenständig entworfen und umgesetzt, mit Fokus auf:
-
-- **API-Integration:** Abrufen und Verarbeiten von Daten in Echtzeit.
-- **Sauberen Code:** Verwendung von modularen Funktionen wie `addClass` und `firstLetterCapital` zur Wiederverwendbarkeit.
-- **Design:** Ein moderner, minimaler Look, der auf Pixel-Art-Stil basiert, um eine nostalgische Atmosphäre zu schaffen.
+Dieses Projekt wurde eigenständig entworfen und umgesetzt, mit Fokus auf:
+- **API-Integration:** Abruf und Verarbeitung von Echtzeitdaten.
+- **Modularer Code:** Funktionen wie `addClass` und `firstLetterCapital` für Wiederverwendbarkeit.
+- **Design:** Ein moderner, minimalistischer Look mit nostalgischem Pixel-Art-Stil.
 
 ---
 
-## Screenshots
+### Screenshots
 
-1. **Startseite:** Eingabemaske für die Pokémon-Suche.![Pokémon-Suche](./README-Images/PokeDex1.png)
+1. **Startseite:** Eingabemaske für die Pokémon-Suche.  
+   <img src="./README-Images/PokeDex1.png" alt="Startseite" style="width: 80%; display: block; margin: auto;">
 
-2. **Pokémon-Daten:** Details wie Name, Typ, Größe und Gewicht werden dynamisch geladen. ![Pokémon-Infos](./README-Images/PokeDexInfos.png)
+2. **Pokémon-Daten:** Details wie Name, Typ, Größe und Gewicht werden dynamisch geladen.  
+   <img src="./README-Images/PokeDexInfos.png" alt="Pokémon-Daten" style="width: 80%; display: block; margin: auto;">
 
 ---
 
