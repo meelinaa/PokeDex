@@ -65,5 +65,29 @@ Um dieses Projekt lokal auszuführen, benötigen Sie:
    git clone https://github.com/dein-benutzername/pokedex.git
    cd pokedex
     ```
+---
 
+## Öffnen von `index.html`
 
+- Öffnen Sie die Datei direkt in Ihrem Browser oder via Live-Server unter:  
+  `http://localhost:8080`.
+
+---
+
+## Nutzung
+
+1. Geben Sie den Namen eines Pokémon ein (z. B. "pikachu") und klicken Sie auf **"Search"**.
+2. Die App zeigt die wichtigsten Informationen wie Typ, Index, Größe und Gewicht des Pokémon an.
+3. Die Typen werden farblich hervorgehoben, um die Zuordnung zu erleichtern.
+
+---
+
+## Lizenz
+
+Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
+
+---
+
+## Kontakt
+
+Für Fragen oder Feedback kontaktieren Sie mich über [E-Mail](mailto:melinakiefer@hotmail.de) oder GitHub. Ich freue mich auf Ihre Rückmeldung!
