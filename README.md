@@ -1,48 +1,69 @@
-# PokeDex
+# Pokédex: Interaktive Pokémon-Datenbank 🕹️
 
-Ein einfacher PokeDex, der über die [PokeAPI](https://pokeapi.co/) Daten zu einem beliebigen Pokémon abruft und anzeigt. Das Projekt wurde mit **HTML**, **CSS** und **JavaScript** erstellt.
+Pokédex ist eine einfache, aber leistungsstarke Webanwendung, mit der Benutzer Pokémon suchen und wichtige Informationen zu jedem Pokémon erhalten können. Die Anwendung nutzt die PokéAPI, um Echtzeitdaten abzurufen und sie in einer benutzerfreundlichen Oberfläche anzuzeigen.
 
----
+## Features
 
-## 🚀 Funktionsweise
-
-1. Gib den Namen eines Pokémon (auf Englisch) in das Suchfeld ein.
-2. Klicke auf den **Search**-Button.
-3. Die Details des Pokémon (Name, Index, Typ, Gewicht, Höhe und ein Bild) werden angezeigt.
-
----
-
-## 🔧 Technologien
-
-- **HTML**: Struktur des Projekts
-- **CSS**: Gestaltung der Benutzeroberfläche
-- **JavaScript**: API-Anfragen und dynamisches Anzeigen der Ergebnisse
+- **Pokémon-Suche:** Geben Sie den Namen eines Pokémon ein, um Daten wie Typ, Gewicht, Größe und Index anzuzeigen.
+- **Dynamische Anzeige:** Daten werden mithilfe der PokéAPI in Echtzeit abgerufen und visuell dargestellt.
+- **Farbliche Typ-Kennzeichnung:** Die Typen der Pokémon werden visuell hervorgehoben, um die Benutzererfahrung zu verbessern.
+- **Responsives Design:** Optimiert für verschiedene Bildschirmgrößen, einschließlich mobiler Geräte.
+- **Saubere Logik:** Gut strukturierter Code, der die Daten effizient verarbeitet und darstellt.
 
 ---
 
-## 🛠️ Features
+## Projektstruktur
 
-- **API-Integration**: Die Daten werden live von der [PokeAPI](https://pokeapi.co/) abgerufen.
-- **Einfache Bedienung**: Benutzerfreundliches Interface mit klaren Informationen.
+- **Frontend:** 
+  - Reines HTML, CSS und JavaScript.
+  - Dynamische DOM-Manipulation zur Darstellung der Daten.
+- **API:** 
+  - Integration der [PokéAPI](https://pokeapi.co/), einer offenen API für Pokémon-Daten.
 
 ---
 
-## 📋 Installation
+## Technologien
 
-1. Lade die Projektdateien herunter oder klone das Repository:
+- 🖼️ **Frontend:** HTML, CSS und JavaScript.
+- 🌐 **API:** PokéAPI zur dynamischen Datenabfrage.
+- 📱 **Responsives Design:** Optimierung für verschiedene Gerätegrößen.
+
+---
+
+## Software-Entwicklung und Planung
+
+Dieses Projekt wurde vollständig eigenständig entworfen und umgesetzt, mit Fokus auf:
+
+- **API-Integration:** Abrufen und Verarbeiten von Daten in Echtzeit.
+- **Sauberen Code:** Verwendung von modularen Funktionen wie `addClass` und `firstLetterCapital` zur Wiederverwendbarkeit.
+- **Design:** Ein moderner, minimaler Look, der auf Pixel-Art-Stil basiert, um eine nostalgische Atmosphäre zu schaffen.
+- **Responsiveness:** Optimierte Darstellung auf mobilen Geräten.
+
+---
+
+## Screenshots
+
+1. **Startseite:** Eingabemaske für die Pokémon-Suche.
+2. **Pokémon-Daten:** Details wie Name, Typ, Größe und Gewicht werden dynamisch geladen.
+3. **Responsives Design:** Optimierte Ansicht auf Smartphones und Tablets.
+
+---
+
+## Voraussetzungen
+
+Um dieses Projekt lokal auszuführen, benötigen Sie:
+
+1. [Node.js](https://nodejs.org/).
+2. Einen modernen Browser (z. B. Chrome, Edge oder Firefox).
+
+---
+
+## Lokale Installation und Ausführung
+
+1. **Projekt klonen:**
    ```bash
-   git clone https://github.com/dein-username/pokedex.git
+   git clone https://github.com/dein-benutzername/pokedex.git
+   cd pokedex
     ```
-2. Öffne die index.html-Datei in deinem Browser.
 
----
 
-## 🌟 Geplante Verbesserungen
-
-- Hinzufügen einer Ladeanimation während der API-Anfrage.
-
----
-
-## 🌐 Links
-
-- **PokeAPI**: [https://pokeapi.co/](https://pokeapi.co/)
