@@ -1,6 +1,38 @@
+:root{
+    --default-background: rgba(255, 255, 255, 0.2);
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --search-bar: azure;
+    --default-search-btn: rgb(49, 49, 49);
+    --active-search-btn: rgb(119, 201, 242);
+    --white: white;
+    --font: "Poppins", sans-serif;
+    --font-size: 16px;
+}
+
+/*STYLE*/
+.glass-effect{
+    background: var(--default-background); 
+    box-shadow: 0 4px 8px var(--box-shadow); 
+    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--default-background);
+}
+
+.main-cards-default-features{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 500px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+/*BODY*/
 body{
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-family: var(--font);
+    font-size: var(--font-size);
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,82 +47,94 @@ body{
     height: 100vh;
 }
 
-
-header{
+main{
     width: 500px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.2); 
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.3); 
+    padding: 30px;
+}
+
+footer{
+    color: var(--white);
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
 }
 
 header h1{
-    color: white;
+    color: var(--white);
     font-size: 50px;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    margin: 0;
-    margin-top: 30px;
+/*MOBILE*/
+@media (max-width: 768px) {
 
-    padding: 30px;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.2); 
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    body{
+        padding: 16px;
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+
+    .main-cards-default-features{
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+    }
 }
 
+/*SEARCH*/
 .search{
-    background-color: cadetblue;
-    width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 40px;
-    height: 40px;
+    height: 44px;
     overflow: hidden;
     border-radius: 4px;
 }
 
 #namePokemon{
-    background-color: azure;
+    background-color: var(--search-bar);
     width: 100%;
     border: none;
     padding: 20px;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-family: var(--font);
+    font-size: var(--font-size);
+    border-radius: 4px 0px 0px 4px;
 }
 
-.search button{
+.searchBtn{
     border: none;
-    color: white;
-    background-color:rgb(49, 49, 49);
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    color: var(--white);
+    background-color: var(--default-search-btn);
+    font-family: var(--font);
+    font-size: var(--font-size);
+    border-radius: 0px 4px 4px 0px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.card{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    justify-content: space-between;
+.searchBtn:hover{
+    color: var(--default-search-btn);
+    background-color:var(--white);
+    border: 1px solid var(--default-search-btn);
 }
 
+.searchBtn:active{
+    color: var(--white);
+    background-color: var(--active-search-btn);
+    border: 1px solid var(--active-search-btn);
+}
+
+/*PICTURES*/
 .pictures{
     display: flex;
     flex-direction: column;
@@ -104,7 +148,7 @@ main{
     height: auto;
 }
 
-
+/*INFOS*/
 
 .infos{
     display: flex;
@@ -115,26 +159,92 @@ main{
 }
 
 .infos p{
-    font-size: 14px;
+    font-size: var(--font-size);
     font-weight: 600;
-    color: rgb(49, 49, 49);
     padding: 5px 10px;
     margin: 8px;
     width: 100%;
     align-self: flex-end;
     border-radius: 4px;
-    background: rgba(255, 255, 255, 0.2); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: default;
 }
 
-footer{
+.infos p:hover {
+    transform: translateY(-3px); 
+}
+
+/*ELEMENTS*/
+.electric{
+    background-color: yellow;
+}
+
+.fire{
+    background-color: red;
     color: white;
-    margin-top: 20px;
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+}
+
+.water{
+    background-color: aquamarine;
+}
+
+.grass{
+    background-color: forestgreen;
+    color: white;
+}
+
+.ice{
+    background-color:darkturquoise;
+}
+
+.fighting{
+    background-color: brown;
+    color: white;
+}
+
+.fairy{
+    background-color:darkorchid;
+    color: white;
+}
+
+.flying{
+    background-color: cornflowerblue;
+}
+
+.ghost{
+    background-color: indigo;
+    color: white;
+}
+
+.bug{
+    background-color: greenyellow;
+}
+
+.ground{
+    background-color:saddlebrown;
+    color: white;
+}
+
+.poison{
+    background-color: blueviolet;
+    color: white;
+}
+
+.psychic{
+    background-color: palevioletred;
+}
+
+.rock{
+    background-color: sienna;
+    color: white;
+}
+
+.steel{
+    background-color: dimgray;
+    color: white;
+}
+
+.normal{
+    background-color: gray;
+    color: white;
 }

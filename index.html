@@ -12,14 +12,14 @@
 </head>
 <body>
 
-    <header>
+    <header class="glass-effect main-cards-default-features">
         <h1>Pokedex</h1>
     </header>
 
-    <main>
+    <main class="glass-effect main-cards-default-features">
         <div class="search">
             <input type="text" name="namePokomen" id="namePokemon" placeholder="pikachu">
-            <button onclick="searchPokemon()">Search</button>
+            <button class="searchBtn" onclick="searchPokemon()">Search</button>
         </div>
 
         <div class="card">
@@ -27,26 +27,23 @@
                 <img src="images/pika.png" alt="frontPic" id="frontPic">                     
             </div>
             <div class="infos">
-                <p id="pokeName">Name: Pikachu</p>
-                <p id="gameIndex">Index: 25</p>
-                <p id="pokeIndex">Type: Electric</p>
-                <p id="pokeGewicht">Weight: 60 kg</p>
-                <p id="pokeGröße">Height: 120 cm</p>
+                <p class="glass-effect" id="pokeName">Name: Pikachu</p>
+                <p class="glass-effect" id="gameIndex">Index: 25</p>
+                <p class="glass-effect" id="pokeIndex" >Type: Electric</p>
+                <p class="glass-effect" id="pokeWeight">Weight: 6 kg</p>
+                <p class="glass-effect" id="pokeHeight">Height: 40 cm</p>
             </div>
         </div>
     </main>
 
-    <footer>
-        use english names only
-        <a href="https://www.pokewiki.de/Pok%C3%A9mon-Liste">Pokemon List</a>
+    <footer class="main-cards-default-features">
+        <div>
+            Use english names only: <a href="https://www.pokewiki.de/Pok%C3%A9mon-Liste">Pokemon List</a>
+        </div>
+        <div>
+            Project created by <a href="https://github.com/meelinaa">Melina</a> 
+        </div>
     </footer>
-
-    
-
-
-
-
-
 
     <script src="index.js"></script>
 </body>

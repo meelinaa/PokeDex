@@ -40,8 +40,6 @@ Ein einfacher PokeDex, der über die [PokeAPI](https://pokeapi.co/) Daten zu ein
 ## 🌟 Geplante Verbesserungen
 
 - Hinzufügen einer Ladeanimation während der API-Anfrage.
-- Erweiterte Suchmöglichkeiten (z. B. Suche nach Indexnummern).
-- Mehrsprachige Unterstützung für Pokémon-Namen.
 
 ---
 
